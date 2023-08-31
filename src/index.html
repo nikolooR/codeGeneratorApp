@@ -1,13 +1,40 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
+
 <head>
-  <meta charset="utf-8">
-  <title>CodeGenerator</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Item Selector</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <app-root></app-root>
+
+    <div class="container">
+        <header>Code Generator</header>
+        <div class="box">
+            <label for="item">Item:</label>
+            <select id="item">
+                <option value="">Select an item</option>
+            </select>
+        </div>
+
+        <div class="box">
+            <label for="color">Color:</label>
+            <select id="color">
+                <option value="">Select a color</option>
+            </select>
+        </div>
+
+        <div class="box">
+            <label for="size">Size:</label>
+            <select id="size">
+                <option value="">Select a size</option>
+            </select>
+        </div>
+
+        <div class="box">
+            <p>Item Code: <span id="itemCode"></span></p>
+        </div>
+    </div>
 </body>
 </html>
